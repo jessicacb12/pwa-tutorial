@@ -5,4 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // add recipe form
   const forms = document.querySelectorAll(".side-form");
   M.Sidenav.init(forms, { edge: "left" });
+
+  const testLinkRedirect = document.getElementById('test_window');
+  testLinkRedirect.addEventListener('click', () => window.open(window.location.hostname + '/pages/contact.html', '_blank'));
 });
